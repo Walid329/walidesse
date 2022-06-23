@@ -136,3 +136,9 @@ a:visited {
 	   background-color: #0D0D3C;
 	   text-decoration: none;
    }
+
+.sc {
+	text-align: center;
+	font-family: 'DM Serif Display', serif;
+  	color: #0D0D3C;
+  }
