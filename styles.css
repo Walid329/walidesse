@@ -1,0 +1,59 @@
+
+body {
+background-color: beige;
+}
+
+.name {
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    float: top, right;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+h1 {
+    text-align: right;
+    font-weight: lighter;
+}
+
+.sections {
+    align-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 90px;
+    padding-left: 50px;
+}
+
+.name a:link{
+    color: black;
+    text-decoration: none;
+}
+
+h2 {
+    font-weight: lighter;
+    text-align: left;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.sections a:link{
+    color: black;
+    text-decoration: none;
+}
+
+.name a:visited {
+    color: black;
+}
+
+.sections a:visited {
+    color: black;
+}
+
+.sections a:hover {
+    color: rgb(0, 115, 255);
+}
+
+.name a:hover {
+    color: rgb(0, 115, 255);
+}
