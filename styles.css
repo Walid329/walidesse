@@ -24,20 +24,7 @@ h1 {
     padding-left: 50px;
 }
 
-.name a:link{
-    color: black;
-    text-decoration: none;
-}
-
-h2 {
-    font-weight: lighter;
-    text-align: left;
-    font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-}
-
-.sections a:link{
+.name a:link {
     color: black;
     text-decoration: none;
 }
@@ -46,46 +33,54 @@ h2 {
     color: black;
 }
 
-.sections a:visited {
+.name a:hover {
+    color:rgb(0, 115, 255)
+}
+
+h2 {
+    font-weight: lighter;
+    text-align: left;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    padding-top: 90px;
+    padding-left: 50px;
+}
+
+h2 a:link{
+    color: black;
+    text-decoration: none;
+}
+
+h2 a:visited {
     color: black;
 }
 
-.sections a:hover {
+
+h2 a:hover {
     color: rgb(0, 115, 255);
 }
 
-.name a:hover {
+h3 {
+    font-weight: lighter;
+    text-align: left;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    padding-top: 10;
+    padding-left: 50px;
+}
+
+h3 a:link{
+    color: black;
+    text-decoration: none;
+}
+
+h3 a:visited {
+    color: black;
+}
+
+
+h3 a:hover {
     color: rgb(0, 115, 255);
-}
-
-.blog {
-    align-content: flex-start;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding-top: 90px;
-    padding-left: 50px;
-}
-
-.about {
-    align-content: flex-start;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding-top: 90px;
-    padding-left: 50px;
-}
-
-.experience {
-    align-content: flex-start;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding-top: 90px;
-    padding-left: 50px;
-}
-
-.projects {
-    align-content: flex-start;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding-top: 90px;
-    padding-left: 50px;
 }
