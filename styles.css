@@ -57,3 +57,35 @@ h2 {
 .name a:hover {
     color: rgb(0, 115, 255);
 }
+
+.blog {
+    align-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 90px;
+    padding-left: 50px;
+}
+
+.about {
+    align-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 90px;
+    padding-left: 50px;
+}
+
+.experience {
+    align-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 90px;
+    padding-left: 50px;
+}
+
+.projects {
+    align-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 90px;
+    padding-left: 50px;
+}
