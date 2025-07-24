@@ -1,46 +1,22 @@
+/* Reset and Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: beige;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* Layout Wrapper */
 .container {
   max-width: 1000px;
-  width: 100%; /* responsive */
+  width: 100%;
   margin: 0 auto;
-  padding: 0 20px; /* consistent horizontal padding */
+  padding: 0 20px; /* main horizontal padding */
   box-sizing: border-box;
-}
-
-/* Desktop Navigation */
-.sections {
-  display: flex;
-  gap: 40px;
-  padding-top: 20px;
-  font-size: 32px;
-  font-weight: lighter;
-  flex-wrap: wrap;
-  padding-left: 0; /* remove to prevent double padding */
-}
-
-/* Mobile Navigation */
-.menu {
-  display: none;
-  flex-wrap: wrap;
-  gap: 30px;
-  padding-top: 20px;
-  font-size: 20px;
-  font-weight: lighter;
-  padding-left: 0; /* remove to keep consistent */
-}
-
-@media (max-width: 800px) {
-  .sections {
-    display: none;
-  }
-
-  .menu {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    font-size: 22px;
-    padding-left: 0; /* no extra left padding */
-  }
 }
 
 /* Name Header */
@@ -57,4 +33,121 @@
 
 .name a:hover {
   color: rgb(0, 115, 255);
+}
+
+/* Desktop Navigation */
+.sections {
+  display: flex;
+  gap: 40px;
+  padding-top: 20px;
+  font-size: 32px;
+  font-weight: lighter;
+  flex-wrap: wrap;
+  /* Removed padding-left */
+}
+
+.sections a {
+  color: black;
+  text-decoration: none;
+}
+
+.sections a:hover {
+  color: rgb(0, 115, 255);
+}
+
+/* Mobile Navigation */
+.menu {
+  display: none;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: lighter;
+  /* Removed padding-left */
+}
+
+.menu a {
+  color: black;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: rgb(0, 115, 255);
+}
+
+/* Blog Heading */
+.blog h2 {
+  font-size: 30px;
+  font-weight: lighter;
+  margin: 40px 0 20px 0; /* removed left margin */
+}
+
+/* Blog Subtitles (Posts List) */
+.subtitle {
+  color: gray;
+  padding-bottom: 30px;
+  /* removed padding-left */
+}
+
+.subtitle h3 {
+  font-weight: lighter;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.subtitle a {
+  color: black;
+  text-decoration: none;
+}
+
+.subtitle a:hover {
+  color: rgb(0, 115, 255);
+}
+
+/* Responsive Navigation Switch */
+@media (max-width: 800px) {
+  .sections {
+    display: none; /* hide desktop nav on small devices */
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;  /* so mobile links wrap nicely */
+    gap: 20px;
+    font-size: 22px; /* a bit bigger for easy tapping */
+    padding-left: 0; /* removed padding-left */
+  }
+}
+
+/* Style experience section like blog */
+.experience h2 {
+  font-size: 30px;
+  font-weight: lighter;
+  margin: 40px 0 20px 0; /* removed left margin */
+  color: black;
+}
+
+/* Make links in experience match hover style */
+.experience a {
+  color: black;
+  text-decoration: none;
+}
+
+.experience a:hover {
+  color: rgb(0, 115, 255);
+}
+
+.blog a {
+  color: black;
+  text-decoration: none;
+}
+
+.blog a:hover {
+  color: rgb(0, 115, 255);
+}
+
+.blog h3 {
+  font-size: 30px;
+  font-weight: lighter;
+  margin: 40px 0 20px 0; /* removed left margin */
 }
