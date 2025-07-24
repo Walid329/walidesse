@@ -1,125 +1,148 @@
+/* Reset and Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-background-color: beige;
+  background-color: beige;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Layout Wrapper */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Name Header */
 .name {
-    text-align: right;
-    font-family: Arial, Helvetica, sans-serif;
-    float: top, right;
-    padding-top: 20px;
-    padding-right: 20px;
+  text-align: right;
+  padding-top: 20px;
 }
 
-h1 {
-    text-align: right;
-    font-weight: lighter;
-}
-
-.sections {
-    align-content: flex-start;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding-left: 50px;
-}
-
-.name a:link {
-    color: black;
-    text-decoration: none;
-}
-
-.name a:visited {
-    color: black;
+.name a {
+  color: black;
+  text-decoration: none;
+  font-weight: normal;
 }
 
 .name a:hover {
-    color:rgb(0, 115, 255)
+  color: rgb(0, 115, 255);
 }
 
-h2 {
-    font-weight: lighter;
-    text-align: left;
-    font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-    
-    padding-left: 50px;
+/* Desktop Navigation */
+.sections {
+  display: flex;
+  gap: 40px;
+  padding-left: 50px;
+  padding-top: 20px;
+  font-size: 30px;
+  font-weight: lighter;
 }
 
-h2 a:link{
-    color: black;
-    text-decoration: none;
+.sections a {
+  color: black;
+  text-decoration: none;
 }
 
-h2 a:visited {
-    color: black;
+.sections a:hover {
+  color: rgb(0, 115, 255);
 }
 
-
-h2 a:hover {
-    color: rgb(0, 115, 255);
+/* Mobile Navigation */
+.menu {
+  display: none;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-left: 50px;
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: lighter;
 }
 
+.menu a {
+  color: black;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: rgb(0, 115, 255);
+}
+
+/* Blog Heading */
+.blog h2 {
+  font-size: 30px;
+  font-weight: lighter;
+  margin: 40px 0 20px 50px;
+}
+
+/* Blog Subtitles (Posts List) */
 .subtitle {
-    font-weight: lighter;
-    text-align: left;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-    /* padding-top: 10; */
-    padding-left: 100px;
+  color: gray;
+  padding-left: 50px;
+  padding-bottom: 30px;
 }
 
-h3 {
-    font-weight: lighter;
+.subtitle h3 {
+  font-weight: lighter;
+  font-size: 20px;
+  margin-bottom: 5px;
 }
 
-h3 a:link{
-    color: black;
-    text-decoration: none;
+.subtitle a {
+  color: black;
+  text-decoration: none;
 }
 
-h3 a:visited {
-    color: black;
+.subtitle a:hover {
+  color: rgb(0, 115, 255);
+}
+
+/* Responsive Navigation Switch */
+@media (max-width: 800px) {
+  .sections {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+  }
+}
+
+/* Style experience section like blog */
+.experience h2 {
+  font-size: 30px;
+  font-weight: lighter;
+  margin: 40px 0 20px 50px;
+  color: black;
+}
+
+/* Make links in experience match hover style */
+.experience a {
+  color: black;
+  text-decoration: none;
+}
+
+.experience a:hover {
+  color: rgb(0, 115, 255);
 }
 
 
-h3 a:hover {
-    color: rgb(0, 115, 255);
+.blog a {
+  color: black;
+  text-decoration: none;
 }
 
-.subtitle {
-    color: gray;
-    font-family: Arial, Helvetica, sans-serif;
+.blog a:hover {
+  color: rgb(0, 115, 255);
 }
 
-a:hover {
-    color: rgb(0, 115, 255);
+.blog h3 {
+  font-size: 30px;
+  font-weight: lighter;
+  margin: 40px 0 20px 50px;
 }
 
-a:link {
-    color: black;
-    text-decoration: none;
-}
-
-a:visited {
-    color: black;
-}
-
-.blog {
-    font-weight: lighter;
-    text-align: left;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-    
-    padding-left: 50px;
-}
-
-.post {
-    padding-top: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 100px;
-    text-align: left;
-    padding-right: 20px;
-}
