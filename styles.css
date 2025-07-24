@@ -13,8 +13,10 @@ body {
 /* Layout Wrapper */
 .container {
   max-width: 1000px;
+  width: 100%; /* let it shrink on small screens */
   margin: 0 auto;
   padding: 0 20px;
+  box-sizing: border-box;
 }
 
 /* Name Header */
@@ -39,8 +41,9 @@ body {
   gap: 40px;
   padding-left: 50px;
   padding-top: 20px;
-  font-size: 30px;
+  font-size: 32px;
   font-weight: lighter;
+  flex-wrap: wrap; /* <-- add this */
 }
 
 .sections a {
@@ -104,11 +107,15 @@ body {
 /* Responsive Navigation Switch */
 @media (max-width: 800px) {
   .sections {
-    display: none;
+    display: none; /* hide desktop nav on small devices */
   }
 
   .menu {
     display: flex;
+    flex-wrap: wrap;  /* so mobile links wrap nicely */
+    gap: 20px;
+    padding-left: 10px; /* less padding */
+    font-size: 22px; /* a bit bigger for easy tapping */
   }
 }
 
