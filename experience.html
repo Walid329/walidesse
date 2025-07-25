@@ -3,12 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
+  <title>experience</title>
+=======
   <title>About</title>
+>>>>>>> 42b0913339d39eec9be8f4a64bdbba4a77ff7644
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
 
+<<<<<<< HEAD
+    <button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
+
+=======
+>>>>>>> 42b0913339d39eec9be8f4a64bdbba4a77ff7644
     <div class="name">
       <h1><a href="index.html">Walid Esse</a></h1>
     </div>
@@ -43,4 +52,29 @@
 
   </div>
 </body>
+<<<<<<< HEAD
+
+<script>
+// Check for saved theme preference or default to light mode
+const currentTheme = localStorage.getItem('theme') || 'light';
+document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+
+// Update toggle button based on current theme
+const toggleButton = document.querySelector('.dark-toggle');
+toggleButton.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+
+function toggleDarkMode() {
+  document.body.classList.toggle('dark-mode');
+  const isDark = document.body.classList.contains('dark-mode');
+  
+  // Save preference to localStorage
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  
+  // Update button icon
+  toggleButton.textContent = isDark ? '☀️' : '🌙';
+}
+</script>
+
+=======
+>>>>>>> 42b0913339d39eec9be8f4a64bdbba4a77ff7644
 </html>

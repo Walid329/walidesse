@@ -3,11 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
+  <title>blog</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Dark Mode Toggle - inline styles for the toggle */
+    .dark-toggle {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: none;
+      border: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      color: black;
+      cursor: pointer;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    .dark-toggle:hover {
+      color: rgb(0, 115, 255);
+      background-color: rgba(0, 115, 255, 0.1);
+    }
+
+    body.dark-mode .dark-toggle {
+      color: #e0e0e0;
+    }
+
+    body.dark-mode .dark-toggle:hover {
+      color: rgb(0, 115, 255);
+      background-color: rgba(0, 115, 255, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
+=======
   <title>About</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
+>>>>>>> 42b0913339d39eec9be8f4a64bdbba4a77ff7644
 
     <div class="name">
       <h1><a href="index.html">Walid Esse</a></h1>
@@ -52,5 +93,31 @@
     </div>
 
   </div>
+<<<<<<< HEAD
+
+  <script>
+    // Check for saved theme preference or default to light mode
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+    
+    // Update toggle button based on current theme
+    const toggleButton = document.querySelector('.dark-toggle');
+    toggleButton.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      const isDark = document.body.classList.contains('dark-mode');
+      
+      // Save preference to localStorage
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      
+      // Update button icon
+      toggleButton.textContent = isDark ? '☀️' : '🌙';
+    }
+  </script>
 </body>
 </html>
+=======
+</body>
+</html>
+>>>>>>> 42b0913339d39eec9be8f4a64bdbba4a77ff7644
