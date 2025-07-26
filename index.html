@@ -150,6 +150,42 @@
         display: flex;
       }
     }
+
+.post {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  color: black;
+}
+
+.post a {
+  color: #0073ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.post a:hover {
+  text-decoration: underline;
+}
+
+.timestamp {
+  color: #777;
+  font-size: 0.85rem;
+}
+
+body.dark-mode .post {
+  background: #222;
+  color: #ddd;
+}
+
+body.dark-mode .timestamp {
+  color: #999;
+}
+
+    
   </style>
 </head>
 <body>
@@ -176,6 +212,12 @@
       <a href="blog.html">blog</a>
     </div>
   </div>
+
+<div class="post">
+  <p><strong>walidesse</strong> posted <a href="projects.html">My Cool Project</a></p>
+  <p class="timestamp">Fri Jul 26</p>
+</div>
+
 
   <script>
     // Check for saved theme preference or default to light mode

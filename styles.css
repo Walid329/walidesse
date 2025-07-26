@@ -105,7 +105,7 @@ body {
 }
 
 /* Responsive Navigation Switch */
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .sections {
     display: none; /* hide desktop nav on small devices */
   }
