@@ -1,23 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>projects</title>
-=======
-  <title>Projects</title>
->>>>>>> 42b0913339d39eec9be8f4a64bdbba4a77ff7644
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Dark Mode Toggle - inline styles for the toggle */
+    .dark-toggle {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: none;
+      border: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      color: black;
+      cursor: pointer;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    .dark-toggle:hover {
+      color: rgb(0, 115, 255);
+      background-color: rgba(0, 115, 255, 0.1);
+    }
+
+    body.dark-mode .dark-toggle {
+      color: #e0e0e0;
+    }
+
+    body.dark-mode .dark-toggle:hover {
+      color: rgb(0, 115, 255);
+      background-color: rgba(0, 115, 255, 0.2);
+    }
+
+    /* Projects Heading */
+    .projects h2 {
+      font-size: 30px;
+      font-weight: lighter;
+      margin: 40px 0 20px 0;
+    }
+
+    .projects a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .projects a:hover {
+      color: rgb(0, 115, 255);
+    }
+
+    .subtitle {
+      color: gray;
+      padding-bottom: 30px;
+    }
+
+    .subtitle h3 {
+      font-weight: lighter;
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .subtitle a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .subtitle a:hover {
+      color: rgb(0, 115, 255);
+    }
+
+    body.dark-mode .projects h2,
+    body.dark-mode .subtitle h3 {
+      color: #f0f0f0;
+    }
+
+    body.dark-mode .subtitle {
+      color: #ccc;
+    }
+
+    body.dark-mode .subtitle a {
+      color: #e0e0e0;
+    }
+
+    body.dark-mode .subtitle a:hover {
+      color: rgb(0, 115, 255);
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-
-<<<<<<< HEAD
     <button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
 
-=======
->>>>>>> 42b0913339d39eec9be8f4a64bdbba4a77ff7644
     <div class="name">
       <h1><a href="index.html">Walid Esse</a></h1>
     </div>
@@ -38,36 +114,45 @@
       <a href="blog.html">blog</a>
     </div>
 
-    <!-- Main Projects Content -->
-    <div class="blog">
-      <h2>i do not have any tangible projects. follow along</h2>
+    <!-- Projects Section -->
+    <div class="projects">
+      <h2>i am building projects. they will be here soon</h2>
     </div>
 
+    <div class="subtitle">
+      <h3><a href="#">project 01: minimal website</a></h3>
+      <p>Jul 2025</p>
+      <p>a simple responsive site with dark mode</p>
+    </div>
+
+    <div class="subtitle">
+      <h3><a href="#">project 02: something to come</a></h3>
+      <p>TBD</p>
+      <p>placeholder for an idea still forming</p>
+    </div>
+
+    <div class="subtitle">
+      <h3><a href="#">project #: untitled concept</a></h3>
+      <p>future</p>
+      <p>description coming soon</p>
+    </div>
   </div>
+
+  <script>
+    // Check for saved theme preference or default to light mode
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+
+    // Update toggle button based on current theme
+    const toggleButton = document.querySelector('.dark-toggle');
+    toggleButton.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      const isDark = document.body.classList.contains('dark-mode');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      toggleButton.textContent = isDark ? '☀️' : '🌙';
+    }
+  </script>
 </body>
-<<<<<<< HEAD
-
-<script>
-// Check for saved theme preference or default to light mode
-const currentTheme = localStorage.getItem('theme') || 'light';
-document.body.classList.toggle('dark-mode', currentTheme === 'dark');
-
-// Update toggle button based on current theme
-const toggleButton = document.querySelector('.dark-toggle');
-toggleButton.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
-
-function toggleDarkMode() {
-  document.body.classList.toggle('dark-mode');
-  const isDark = document.body.classList.contains('dark-mode');
-  
-  // Save preference to localStorage
-  localStorage.setItem('theme', isDark ? 'dark' : 'light');
-  
-  // Update button icon
-  toggleButton.textContent = isDark ? '☀️' : '🌙';
-}
-</script>
-
-=======
->>>>>>> 42b0913339d39eec9be8f4a64bdbba4a77ff7644
 </html>

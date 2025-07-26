@@ -3,24 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
-  <title> </title>
-=======
-  <title>Walid Esse</title>
->>>>>>> 42b0913339d39eec9be8f4a64bdbba4a77ff7644
+  <title>post #: Title</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .dark-toggle {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: none;
+      border: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      color: black;
+      cursor: pointer;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    .dark-toggle:hover {
+      color: rgb(0, 115, 255);
+      background-color: rgba(0, 115, 255, 0.1);
+    }
+
+    body.dark-mode .dark-toggle {
+      color: #e0e0e0;
+    }
+
+    body.dark-mode .dark-toggle:hover {
+      color: rgb(0, 115, 255);
+      background-color: rgba(0, 115, 255, 0.2);
+    }
+
+    .blog h3 {
+      font-size: 20px;
+      font-weight: lighter;
+      margin: 20px 0;
+      line-height: 1.6;
+      color: black;
+    }
+
+    body.dark-mode .blog h3 {
+      color: #f0f0f0;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
 
-<<<<<<< HEAD
-    <button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
-
-=======
->>>>>>> 42b0913339d39eec9be8f4a64bdbba4a77ff7644
     <div class="name">
       <h1><a href="index.html">Walid Esse</a></h1>
     </div>
+
+    <button class="dark-toggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode"></button>
 
     <!-- Desktop Navigation -->
     <div class="sections">
@@ -38,37 +73,28 @@
       <a href="blog.html">blog</a>
     </div>
 
+    <!-- Blog Post Placeholder -->
     <div class="blog">
-      <h3>post #: Title</h3>
+      <h2>post #: Title</h2>
       <h3>Day Month Date</h3>
-      <h3>body</h3>
+      <h3>this is a placeholder for a future blog post. stay tuned.</h3>
     </div>
 
   </div>
-<<<<<<< HEAD
 
-<script>
-// Check for saved theme preference or default to light mode
-const currentTheme = localStorage.getItem('theme') || 'light';
-document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+  <script>
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.body.classList.toggle('dark-mode', currentTheme === 'dark');
 
-// Update toggle button based on current theme
-const toggleButton = document.querySelector('.dark-toggle');
-toggleButton.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+    const toggleButton = document.querySelector('.dark-toggle');
+    toggleButton.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
 
-function toggleDarkMode() {
-  document.body.classList.toggle('dark-mode');
-  const isDark = document.body.classList.contains('dark-mode');
-  
-  // Save preference to localStorage
-  localStorage.setItem('theme', isDark ? 'dark' : 'light');
-  
-  // Update button icon
-  toggleButton.textContent = isDark ? '☀️' : '🌙';
-}
-</script>
-
-=======
->>>>>>> 42b0913339d39eec9be8f4a64bdbba4a77ff7644
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      const isDark = document.body.classList.contains('dark-mode');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      toggleButton.textContent = isDark ? '☀️' : '🌙';
+    }
+  </script>
 </body>
 </html>

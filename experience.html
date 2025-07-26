@@ -1,23 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>experience</title>
-=======
-  <title>About</title>
->>>>>>> 42b0913339d39eec9be8f4a64bdbba4a77ff7644
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Dark Mode Toggle */
+    .dark-toggle {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: none;
+      border: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      color: black;
+      cursor: pointer;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    .dark-toggle:hover {
+      color: rgb(0, 115, 255);
+      background-color: rgba(0, 115, 255, 0.1);
+    }
+
+    body.dark-mode .dark-toggle {
+      color: #e0e0e0;
+    }
+
+    body.dark-mode .dark-toggle:hover {
+      color: rgb(0, 115, 255);
+      background-color: rgba(0, 115, 255, 0.2);
+    }
+
+    /* Experience Section */
+    .experience h2 {
+      font-size: 30px;
+      font-weight: lighter;
+      margin: 40px 0 20px 0;
+    }
+
+    .experience a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .experience a:hover {
+      color: rgb(0, 115, 255);
+    }
+
+    body.dark-mode .experience h2 {
+      color: #f0f0f0;
+    }
+
+    body.dark-mode .experience a {
+      color: #e0e0e0;
+    }
+
+    body.dark-mode .experience a:hover {
+      color: rgb(0, 115, 255);
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-
-<<<<<<< HEAD
     <button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
 
-=======
->>>>>>> 42b0913339d39eec9be8f4a64bdbba4a77ff7644
     <div class="name">
       <h1><a href="index.html">Walid Esse</a></h1>
     </div>
@@ -38,43 +89,32 @@
       <a href="blog.html">blog</a>
     </div>
 
-    <!-- Main About Content -->
-    <div class="blog">
+    <!-- Experience Section -->
+    <div class="experience">
       <h2>
-        i was at 
-        <a href="https://www.linkedin.com/company/xcel-energy/about/" target="_blank">xcel energy</a> 
-        for a little. now i am at 
+        i was at
+        <a href="https://www.linkedin.com/company/xcel-energy/about/" target="_blank">xcel energy</a>
+        for a little. now i am at
         <a href="https://www.linkedin.com/company/rochester-public-utilities/posts/?feedView=all" target="_blank">
           rochester public utilities
-        </a>
+        </a>.
       </h2>
     </div>
-
   </div>
+
+  <script>
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+
+    const toggleButton = document.querySelector('.dark-toggle');
+    toggleButton.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      const isDark = document.body.classList.contains('dark-mode');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      toggleButton.textContent = isDark ? '☀️' : '🌙';
+    }
+  </script>
 </body>
-<<<<<<< HEAD
-
-<script>
-// Check for saved theme preference or default to light mode
-const currentTheme = localStorage.getItem('theme') || 'light';
-document.body.classList.toggle('dark-mode', currentTheme === 'dark');
-
-// Update toggle button based on current theme
-const toggleButton = document.querySelector('.dark-toggle');
-toggleButton.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
-
-function toggleDarkMode() {
-  document.body.classList.toggle('dark-mode');
-  const isDark = document.body.classList.contains('dark-mode');
-  
-  // Save preference to localStorage
-  localStorage.setItem('theme', isDark ? 'dark' : 'light');
-  
-  // Update button icon
-  toggleButton.textContent = isDark ? '☀️' : '🌙';
-}
-</script>
-
-=======
->>>>>>> 42b0913339d39eec9be8f4a64bdbba4a77ff7644
 </html>

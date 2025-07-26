@@ -1,23 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
-  <title>blog/post01</title>
-=======
-  <title>Walid Esse</title>
->>>>>>> 42b0913339d39eec9be8f4a64bdbba4a77ff7644
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>post 01: Hello World</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .dark-toggle {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: none;
+      border: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      color: black;
+      cursor: pointer;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    .dark-toggle:hover {
+      color: rgb(0, 115, 255);
+      background-color: rgba(0, 115, 255, 0.1);
+    }
+
+    body.dark-mode .dark-toggle {
+      color: #e0e0e0;
+    }
+
+    body.dark-mode .dark-toggle:hover {
+      color: rgb(0, 115, 255);
+      background-color: rgba(0, 115, 255, 0.2);
+    }
+
+    .blog h3 {
+      font-size: 20px;
+      font-weight: lighter;
+      margin: 20px 0;
+      line-height: 1.6;
+      color: black;
+    }
+
+    body.dark-mode .blog h3 {
+      color: #f0f0f0;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-
-<<<<<<< HEAD
     <button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
 
-=======
->>>>>>> 42b0913339d39eec9be8f4a64bdbba4a77ff7644
     <div class="name">
       <h1><a href="index.html">Walid Esse</a></h1>
     </div>
@@ -40,58 +74,43 @@
 
     <!-- Blog Post Content -->
     <div class="blog">
-      <h3>post 01: Hello World</h3>
+      <h2>post 01: Hello World</h2>
       <h3>Tue Jul 22</h3>
-      <h3>this is where text will go. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Morbi eleifend augue vitae nunc tristique sagittis. Etiam arcu risus, consectetur sed gravida in, varius at erat. 
-        Phasellus quis sem sit amet nulla gravida mollis. Pellentesque commodo orci eu blandit blandit. Aenean et tempor 
-        ligula. In hendrerit sodales risus ac suscipit. Vivamus felis tortor, tincidunt eu interdum vitae, tincidunt eu odio. 
+
+      <h3>
+        this is where text will go. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Morbi eleifend augue vitae nunc tristique sagittis. Etiam arcu risus, consectetur sed gravida in, varius at erat.
+        Phasellus quis sem sit amet nulla gravida mollis. Pellentesque commodo orci eu blandit blandit. Aenean et tempor ligula. 
+        In hendrerit sodales risus ac suscipit. Vivamus felis tortor, tincidunt eu interdum vitae, tincidunt eu odio.
+      </h3>
+
+      <h3>
         Fusce finibus, orci a scelerisque sagittis, erat orci fringilla purus, et viverra metus dui in risus. 
-        Integer porttitor sit amet lorem ac aliquet. Nam ut dictum elit. Cras pharetra, nunc ac rutrum laoreet, est nunc bibendum sem, vel mattis 
-        neque leo sit amet felis. Nam pellentesque at mauris ac mattis. Mauris facilisis augue sed nibh euismod, quis pretium risus cursus. 
-        Pellentesque et nisi vulputate, gravida erat ac, mollis purus.</h3>
+        Integer porttitor sit amet lorem ac aliquet. Nam ut dictum elit. Cras pharetra, nunc ac rutrum laoreet, 
+        est nunc bibendum sem, vel mattis neque leo sit amet felis. Nam pellentesque at mauris ac mattis.
+      </h3>
 
-      <h3>in tortor eu dui sollicitudin imperdiet. Pellentesque fringilla ante in velit auctor, a viverra purus tristique. 
-        Sed at justo eget purus dapibus placerat in vel mauris. Maecenas sit amet nibh non ligula posuere aliquam sit amet at ante. 
-        Sed lectus ante, lacinia at cursus quis, elementum a purus. Integer in diam nunc. Pellentesque lobortis tellus eget turpis 
-        dapibus, vitae faucibus tellus vestibulum. Pellentesque rutrum feugiat placerat. Vivamus eu purus rhoncus, gravida libero 
-        non, porttitor lacus. Vestibulum consectetur, erat vitae dictum accumsan, lorem sapien elementum augue, sed pretium velit 
-        nibh vitae sapien. In quis erat urna. Interdum et malesuada fames ac ante ipsum primis in faucibus.</h3>
-
-      <h3>Etiam sit amet euismod enim. Suspendisse lacinia lorem libero. Morbi vulputate congue purus, a lobortis elit consequat et. 
-        Maecenas facilisis sagittis augue sed luctus. Aliquam fermentum facilisis fringilla. Vivamus aliquam tincidunt ex, vitae 
-        consectetur nisl tincidunt a. Praesent nec nunc posuere, dignissim turpis non, lobortis justo. Vivamus ut leo ac ex ornare 
-        mattis in ut enim. Suspendisse potenti. In aliquet blandit efficitur. Vestibulum consectetur, nibh vel sodales commodo, enim 
-        orci porta sapien, eu ultricies turpis justo vel massa. Vestibulum tellus dui, mollis et ornare id, lobortis eget erat. Donec 
-        dictum imperdiet neque, eget ultrices neque venenatis eget. Donec ut interdum ipsum. Sed tincidunt ac nibh ac mattis. Phasellus 
-        ipsum nunc, venenatis quis orci at, varius euismod arcu.</h3>
+      <h3>
+        Etiam sit amet euismod enim. Suspendisse lacinia lorem libero. Morbi vulputate congue purus, a lobortis elit consequat et. 
+        Maecenas facilisis sagittis augue sed luctus. Aliquam fermentum facilisis fringilla. Vivamus aliquam tincidunt ex, 
+        vitae consectetur nisl tincidunt a.
+      </h3>
     </div>
-
   </div>
+
+  <script>
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+
+    const toggleButton = document.querySelector('.dark-toggle');
+    toggleButton.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      const isDark = document.body.classList.contains('dark-mode');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      toggleButton.textContent = isDark ? '☀️' : '🌙';
+    }
+  </script>
 </body>
-<<<<<<< HEAD
-
-<script>
-// Check for saved theme preference or default to light mode
-const currentTheme = localStorage.getItem('theme') || 'light';
-document.body.classList.toggle('dark-mode', currentTheme === 'dark');
-
-// Update toggle button based on current theme
-const toggleButton = document.querySelector('.dark-toggle');
-toggleButton.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
-
-function toggleDarkMode() {
-  document.body.classList.toggle('dark-mode');
-  const isDark = document.body.classList.contains('dark-mode');
-  
-  // Save preference to localStorage
-  localStorage.setItem('theme', isDark ? 'dark' : 'light');
-  
-  // Update button icon
-  toggleButton.textContent = isDark ? '☀️' : '🌙';
-}
-</script>
-
-=======
->>>>>>> 42b0913339d39eec9be8f4a64bdbba4a77ff7644
 </html>
