@@ -8,6 +8,7 @@
 body {
   background-color: beige;
   font-family: Arial, Helvetica, sans-serif;
+  color: black;
 }
 
 /* Layout Wrapper */
@@ -43,7 +44,6 @@ body {
   font-size: 32px;
   font-weight: lighter;
   flex-wrap: wrap;
-  /* Removed padding-left */
 }
 
 .sections a {
@@ -63,7 +63,6 @@ body {
   padding-top: 20px;
   font-size: 20px;
   font-weight: lighter;
-  /* Removed padding-left */
 }
 
 .menu a {
@@ -79,14 +78,13 @@ body {
 .blog h2 {
   font-size: 30px;
   font-weight: lighter;
-  margin: 40px 0 20px 0; /* removed left margin */
+  margin: 40px 0 20px 0;
 }
 
 /* Blog Subtitles (Posts List) */
 .subtitle {
   color: gray;
   padding-bottom: 30px;
-  /* removed padding-left */
 }
 
 .subtitle h3 {
@@ -112,10 +110,10 @@ body {
 
   .menu {
     display: flex;
-    flex-wrap: wrap;  /* so mobile links wrap nicely */
+    flex-wrap: wrap;
     gap: 20px;
-    font-size: 22px; /* a bit bigger for easy tapping */
-    padding-left: 0; /* removed padding-left */
+    font-size: 22px;
+    padding-left: 0;
   }
 }
 
@@ -123,11 +121,10 @@ body {
 .experience h2 {
   font-size: 30px;
   font-weight: lighter;
-  margin: 40px 0 20px 0; /* removed left margin */
+  margin: 40px 0 20px 0;
   color: black;
 }
 
-/* Make links in experience match hover style */
 .experience a {
   color: black;
   text-decoration: none;
@@ -149,5 +146,69 @@ body {
 .blog h3 {
   font-size: 30px;
   font-weight: lighter;
-  margin: 40px 0 20px 0; /* removed left margin */
+  margin: 40px 0 20px 0;
+}
+
+/* === Dark Mode Support === */
+
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+/* Name header */
+body.dark-mode .name a {
+  color: #e0e0e0;
+}
+
+body.dark-mode .name a:hover {
+  color: rgb(0, 115, 255);
+}
+
+/* Navigation links */
+body.dark-mode .sections a,
+body.dark-mode .menu a {
+  color: #e0e0e0;
+}
+
+body.dark-mode .sections a:hover,
+body.dark-mode .menu a:hover {
+  color: rgb(0, 115, 255);
+}
+
+/* Blog and experience sections */
+body.dark-mode .blog a,
+body.dark-mode .experience a {
+  color: #e0e0e0;
+}
+
+body.dark-mode .blog a:hover,
+body.dark-mode .experience a:hover {
+  color: rgb(0, 115, 255);
+}
+
+/* Blog subtitles */
+body.dark-mode .subtitle {
+  color: #999;
+}
+
+/* Generic dark mode link color override */
+body.dark-mode a {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+body.dark-mode a:hover {
+  color: rgb(0, 115, 255);
+}
+
+/* Responsive Navigation Switch in dark mode */
+@media (max-width: 900px) {
+  body.dark-mode .sections {
+    display: none;
+  }
+
+  body.dark-mode .menu {
+    display: flex;
+  }
 }
