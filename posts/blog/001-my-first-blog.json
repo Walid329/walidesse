@@ -1,0 +1,8 @@
+{
+  "type": "blog",
+  "title": "Hello World",
+  "preview": "this is where text will go. Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+  "link": "blog-post01.html",
+  "date": "2024-07-22",
+  "tags": ["personal", "hello"]
+}
