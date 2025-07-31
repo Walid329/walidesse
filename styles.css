@@ -47,7 +47,7 @@ body {
 }
 
 .sections a {
-  color: black;
+  color: black; /* Changed from rgb(0, 115, 255) to black */
   text-decoration: none;
 }
 
