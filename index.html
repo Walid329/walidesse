@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Walid Esse</title>
+
+  <title>walid esse</title>
+
   <style>
-    /* Reset and Base Styles */
+    /* how everything should be */
     * {
       box-sizing: border-box;
       margin: 0;
@@ -17,7 +21,7 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
-    /* Layout Wrapper */
+    /* where it all goes under */
     .container {
       max-width: 1000px;
       width: 100%;
@@ -26,7 +30,7 @@
       box-sizing: border-box;
     }
 
-    /* Dark Mode Toggle */
+    /* turn on dark mode */
     .dark-toggle {
       position: absolute;
       top: 20px;
@@ -47,7 +51,7 @@
       background-color: rgba(0, 115, 255, 0.1);
     }
 
-    /* Name Header - matches blog style */
+    /* make sure my name stays the same on all pages */
     .name {
       text-align: right;
       padding-top: 20px;
@@ -63,7 +67,7 @@
       color: rgb(0, 115, 255);
     }
 
-    /* Dark mode styles */
+    /* how it looks in dark mode */
     body.dark-mode {
       background-color: #1a1a1a;
       color: #e0e0e0;
@@ -102,7 +106,7 @@
       background-color: rgba(0, 115, 255, 0.2);
     }
 
-    /* Vertical Navigation - unique to index */
+    /* make them vertical if screen big enough */
     .sections {
       display: flex;
       flex-direction: column;
@@ -121,7 +125,7 @@
       color: rgb(0, 115, 255);
     }
 
-    /* Mobile Navigation */
+    /* how it looks on smaller screens */
     .menu {
       display: none;
       flex-wrap: wrap;
@@ -140,7 +144,7 @@
       color: rgb(0, 115, 255);
     }
 
-    /* Responsive Navigation Switch */
+    /* should make everything responsive and mobile-friendly */
     @media (max-width: 500px) {
       .sections {
         display: none;
@@ -151,52 +155,94 @@
       }
     }
 
-.post {
-  max-width: 600px;
-  margin: 2rem auto;
-  padding: 1rem;
-  background: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  color: black;
-}
+    /* how each post box looks */
+    .post {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      color: black;
+    }
 
-.post a {
-  color: #0073ff;
-  text-decoration: none;
-  font-weight: bold;
-}
+    /* link color inside post */
+    .post a {
+      color: #0073ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-.post a:hover {
-  text-decoration: underline;
-}
+    .post a:hover {
+      text-decoration: underline;
+    }
 
-.timestamp {
-  color: #777;
-  font-size: 0.85rem;
-}
+    /* timestamp text */
+    .timestamp {
+      color: #777;
+      font-size: 0.85rem;
+    }
 
-body.dark-mode .post {
-  background: #222;
-  color: #ddd;
-}
+    /* dark mode adjustments for posts */
+    body.dark-mode .post {
+      background: #222;
+      color: #ddd;
+    }
 
-body.dark-mode .timestamp {
-  color: #999;
-}
+    body.dark-mode .timestamp {
+      color: #999;
+    }
 
-    
+    body.dark-mode .post a {
+      color: #89bfff;
+    }
+
+    /* keep post-line natural and inline, not flex */
+    .post-line {
+      font-size: 1rem;
+      line-height: 1.5;
+      word-break: break-word;
+    }
+
+    .post-line a {
+      color: #0073ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .post-line a:hover {
+      text-decoration: underline;
+    }
+
+    body.dark-mode .post-line a {
+      color: #89bfff;
+    }
+
+    /* author line styling */
+    .author-info {
+      white-space: nowrap;
+    }
+
+    /* create hanging indent for the link */
+    .post-line {
+      font-size: 1rem;
+      line-height: 1.5;
+      word-break: break-word;
+      padding-left: 8.5em; /* approximate width of "walidesse posted " */
+      text-indent: -8.5em;
+    }
   </style>
 </head>
+
 <body>
   <div class="container">
     <button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
-    
+
     <div class="name">
       <h1><a href="index.html">Walid Esse</a></h1>
     </div>
 
-    <!-- Vertical Navigation -->
+    <!-- my vertical navigation for bigger screens -->
     <nav class="sections">
       <a href="about.html">about</a>
       <a href="projects.html">projects</a>
@@ -204,7 +250,7 @@ body.dark-mode .timestamp {
       <a href="blog.html">blog</a>
     </nav>
 
-    <!-- Mobile Navigation -->
+    <!-- small screens -->
     <div class="menu">
       <a href="about.html">about</a>
       <a href="projects.html">projects</a>
@@ -213,31 +259,35 @@ body.dark-mode .timestamp {
     </div>
   </div>
 
-<div class="post">
-  <p><strong>walidesse</strong> posted <a href="projects.html">My Cool Project</a></p>
-  <p class="timestamp">Fri Jul 26</p>
-</div>
-
+  <!-- blog post -->
+  <div class="post">
+    <!-- inline with controlled wrapping -->
+    <p class="post-line">
+      <span class="author-info"><strong>walidesse</strong> posted </span><a href="project01.html">Integrating Microsoft Lists with Jira using Power Automate and Nintex Workflows</a>
+    </p>
+    <p class="timestamp">Thurs Jul 31</p>
+  </div>
 
   <script>
-    // Check for saved theme preference or default to light mode
+    // check for saved theme preference if not default to light mode
     const currentTheme = localStorage.getItem('theme') || 'light';
     document.body.classList.toggle('dark-mode', currentTheme === 'dark');
-    
-    // Update toggle button based on current theme
+
+    // update the toggle button based on current the theme
     const toggleButton = document.querySelector('.dark-toggle');
     toggleButton.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
 
     function toggleDarkMode() {
       document.body.classList.toggle('dark-mode');
       const isDark = document.body.classList.contains('dark-mode');
-      
-      // Save preference to localStorage
+
+      // save preferences to localStorage
       localStorage.setItem('theme', isDark ? 'dark' : 'light');
-      
-      // Update button icon
+
+      // update the toggle button icon
       toggleButton.textContent = isDark ? '☀️' : '🌙';
     }
   </script>
 </body>
+
 </html>

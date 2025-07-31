@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>post 01: Hello World</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .dark-toggle {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: none;
+      border: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      color: black;
+      cursor: pointer;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    .dark-toggle:hover {
+      color: rgb(0, 115, 255);
+      background-color: rgba(0, 115, 255, 0.1);
+    }
+
+    body.dark-mode .dark-toggle {
+      color: #e0e0e0;
+    }
+
+    body.dark-mode .dark-toggle:hover {
+      color: rgb(0, 115, 255);
+      background-color: rgba(0, 115, 255, 0.2);
+    }
+
+    .blog h3 {
+      font-size: 20px;
+      font-weight: lighter;
+      margin: 20px 0;
+      line-height: 1.6;
+      color: black;
+    }
+
+    body.dark-mode .blog h3 {
+      color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
+
+    <div class="name">
+      <h1><a href="index.html">Walid Esse</a></h1>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <div class="sections">
+      <a href="about.html">about</a>
+      <a href="projects.html">projects</a>
+      <a href="experience.html">experience</a>
+      <a href="blog.html">blog</a>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="menu">
+      <a href="about.html">about</a>
+      <a href="projects.html">projects</a>
+      <a href="experience.html">experience</a>
+      <a href="blog.html">blog</a>
+    </div>
+
+    <!-- Blog Post Content -->
+    <div class="blog">
+      <h2>project 01: Integrating Jira with Microsoft SharePoint Lists using Power Automate and Nintex Workflows</h2>
+      <h3>Thurs Jul 31</h3>
+
+
+      <h2>Microsoft SharePoint</h2>
+
+      <h3>
+        Microsoft SharePoint lets you create lists on your site. These lists have columns that
+        can connect with different tools, like Nintex. Nintex Automation comes with a form
+        designer (Nintex Forms) and a workflow builder (Nintex Workflows).
+        Nintex Automation lets you create different forms and use *rules to configure these
+        forms. SharePoint lists seamlessly syncs the columns with the form.
+        Each time a Nintex form is submitted, the SharePoint list is updated. <br>
+        <small style="color: #666; font-size: 0.8em;">
+        *rules: configurations made to form actions to change how
+        they act. <br> Example: setting a submission to work only if it
+        meets a certain criteria.
+    </small>
+        </h3>
+
+    <h2>Nintex Workflows</h2> 
+
+      <h3>
+        Nintex comes out with a new update. This update improved the look, feel, and overall
+        design. The form used for submitting SharePoint tickets was outdated.
+        We needed to upgrade the old form to a new design, and same with the workflow.
+        Once the form is submitted, it triggers the Nintex Workflow
+        The workflow then goes through the process of alerting owners of a submission, giving
+        them the option to accept or reject the ticket, and then updates the list.
+      </h3>
+
+
+        <h2>Process</h2>
+
+        <img src="images/process.png" alt="flowchart" 
+     style="display: block; margin: 0 auto; width: 85%; max-width: 600px; height: auto;">
+
+<h3>Microsoft SharePoint Lists also lets you connect with Power Automate.
+Power Automate also has a workflow builder. The Power Automate workflow used sets
+off a trigger that creates a story in the Jira board with details filled out from the SharePoint tickets form.
+The Nintex Workflow makes it so you can accept or reject a ticket, and then updates
+the list. The Nintex Form is essentially a GUI that is the connection between you and the list. <br>
+
+
+<small style="color: #666; font-size: 0.8em;">
+        Jira: software tool used for project management and issue tracking. In this instance it is used to track
+ongoing projects within our team <br>
+GUI: a graphical user interface used to interact with electronic devices through icons and visual
+indicators. The form gives the user a good visual when submitting a ticket.
+    </small>
+
+    <h2>Jira</h2>
+
+    <h3>Once a submitted ticket reaches approval, there is a third option added to the
+workflow that lets the owner select it as a Jira ticket.
+This configuration triggers a Power Automate workflow that takes the details of the
+ticket and formats them into a Jira story.
+From here, it enters the backlog where it can be added to the next sprint cycle.
+The list is then updated for the last time.</h3>
+
+
+<h2>Pictures</h2>
+
+<h3 style="text-align: center;">Nintex Form Designer</h3>
+
+<img src="images/nintex.png" alt="nintex form designer" 
+     style="display: block; margin: 0 auto; width: 85%; max-width: 600px; height: auto;">
+
+
+     <h3 style="text-align: center;">Microsoft SharePoint Lists</h3>
+
+     <img src="images/sp-list.png" alt="sharepoint list" 
+     style="display: block; margin: 0 auto; width: 85%; max-width: 600px; height: auto;">
+
+     <h3 style="text-align: center;">Nintex Workflow Builder</h3>
+
+     <img src="images/builder.png" alt="nintex workflow builder" 
+     style="display: block; margin: 0 auto; width: 85%; max-width: 600px; height: auto;">
+
+    <h3 style="text-align: center;">Power Automate</h3>
+
+    <img src="images/poautomate.png" alt="power automate"
+     style="display: block; margin: 0 auto; width: 85%; max-width: 600px; height: auto;">
+
+     <h3 style="text-align: center;">Jira</h3>
+
+     <img src="images/jira-example.png" alt="flowchart" 
+     style="display: block; margin: 0 auto; width: 85%; max-width: 600px; height: auto;">
+
+     <br>
+
+</h3>
+     <small style="color: #666; font-size: 0.8em; text-align: center;">note: these images are not from the actual project, but are used to illustrate the tools and processes.</small>
+      </h3>
+      </div>
+
+    
+
+<br> 
+<br>
+<br>
+<br>
+
+  <div> 
+    <h3><a href="javascript:history.back()"> &leftarrow;</a></h3>
+  </div>
+    <br>
+    <br>
+    <br>
+  </div>
+
+  <script>
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+
+    const toggleButton = document.querySelector('.dark-toggle');
+    toggleButton.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      const isDark = document.body.classList.contains('dark-mode');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      toggleButton.textContent = isDark ? '☀️' : '🌙';
+    }
+  </script>
+</body>
+</html>
