@@ -212,3 +212,14 @@ body.dark-mode a:hover {
     display: flex;
   }
 }
+
+.subtitle {
+      color: gray;
+      padding-bottom: 30px;
+    }
+
+    .subtitle h3 {
+      font-weight: lighter;
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
