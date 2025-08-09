@@ -223,3 +223,14 @@ body.dark-mode a:hover {
       font-size: 20px;
       margin-bottom: 5px;
     }
+
+    a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: rgb(0, 115, 255);
+  text-decoration: none;
+}
