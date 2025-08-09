@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enhancing Safety Operations with Digital Tools and Automated Workflows</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+
+  <meta property="og:title" content="Walid Esse" />
+  <meta property="og:description" content="My portfolio, projects, and blog." />
+  <meta property="og:image" content="https://www.walidesse.info/images/walidesse.png" />
+  <meta property="og:url" content="https://www.walidesse.info/" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    .dark-toggle {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: none;
+      border: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      color: black;
+      cursor: pointer;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    .dark-toggle:hover {
+      color: rgb(0, 115, 255);
+      background-color: rgba(0, 115, 255, 0.1);
+    }
+
+    body.dark-mode .dark-toggle {
+      color: #e0e0e0;
+    }
+
+    body.dark-mode .dark-toggle:hover {
+      color: rgb(0, 115, 255);
+      background-color: rgba(0, 115, 255, 0.2);
+    }
+
+    .blog h3 {
+      font-size: 20px;
+      font-weight: lighter;
+      margin: 20px 0;
+      line-height: 1.6;
+      color: black;
+    }
+
+    body.dark-mode .blog h3 {
+      color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
+
+    <div class="name">
+      <h1><a href="index.html">Walid Esse</a></h1>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <div class="sections">
+      <a href="about.html">about</a>
+      <a href="projects.html">projects</a>
+      <a href="experience.html">experience</a>
+      <a href="blog.html">blog</a>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="menu">
+      <a href="about.html">about</a>
+      <a href="projects.html">projects</a>
+      <a href="experience.html">experience</a>
+      <a href="blog.html">blog</a>
+    </div>
+
+    <!-- Blog Post Content -->
+    <div class="blog">
+
+      <h2>Enhancing Safety Operations with Digital Tools and Automated Workflows</h2>
+
+      <h3>Project Overview</h3>
+      <p>
+        I began by updating and digitizing the existing safety manual, converting it into a new standardized format and generating PDF versions that were stored and managed within a SharePoint list for easy access and version control.
+      </p>
+      <p>
+        Building on this foundation, I designed and developed a Microsoft Power Apps Canvas app that serves as a centralized platform to display and navigate the safety manual content efficiently for employees. This app helped support safety training and a learning management system, reducing manual workload and dependency on third-party services.
+      </p>
+      <br>
+      <p>
+        From there, I enhanced the app by integrating additional features: improving data entry forms, digitizing manual processes, and creating a dynamic dashboard to track key safety metrics. I streamlined approval workflows using Power Automate, leveraging API integrations to automate and simplify multi-step processes.
+      </p>
+      <br>
+      <p>
+        A major technical milestone was streamlining approval workflows. Whether that involved building an in-house YouTube to MP4 conversion tool triggered via Power Automate from within the Power Apps interface, which helped support safety training and a learning management system, reducing manual workload and dependency on third-party services, or reducing redundancy by ensuring only the right groups received necessary documents or forms, I used Power Automate to integrate with external APIs and Microsoft 365 services. <br><br>These workflows reduced reliance on manual paperwork and improved processing time for safety report approvals.
+      </p>
+      <p>
+        Throughout the project, I developed custom tools and automated solutions that boosted usability, improved data accuracy, and reduced reliance on paper-based systems, ultimately making safety resources more accessible and operational workflows more efficient.
+      </p>
+
+      <h3>Technical Implementation</h3>
+      <p>
+        I designed and built an organization-wide Microsoft Power Apps Canvas App using the Power Fx Studio user interface editor, SharePoint Lists to store data, and Power Automate to run APIs using HTTP requests, written in Power Fx and WDL, optimizing safety protocols by providing digital formats.
+      </p><br>
+      <p>
+        Using Power Automate, I integrated external APIs and Microsoft 365 services to automate approval workflows, significantly reducing manual paperwork and accelerating safety report approvals. This effort included developing an in-house YouTube to MP4 conversion tool, triggered via Power Automate from within the Power Apps interface. Additionally, I addressed redundancy by ensuring that only the appropriate groups received necessary documents or forms.
+      </p>
+      <p><br>
+        The 17th edition of the safety manual was adapted and digitized for internal use, ensuring company alignment and easy access for employees via digital platforms. This ensured legal and regulatory compliance by using the latest safety standards and improved accessibility for remote or field employees.
+      </p>
+      <p>
+        The department website was redesigned and updated to refine navigation, ensure up-to-date content, and enhance user experience, improving usability and easier access to resources.
+      </p>
+
+      <h3>Ongoing Work</h3>
+      <p>
+        I am currently building an automated workflow that converts data collected via a Power Apps form I built into well-formatted PDF documents. Using Power Automate, I dynamically populate HTML/CSS templates with data from a SharePoint list, applying text cleaning and formatting to ensure accuracy. The process includes iterating through data fields and managing information with variables to generate consistent, standardized outputs. This solution replaces a manual paper-based process and streamlines reporting, distribution, and archival, while supporting seamless integration with other systems.
+      </p>
+
+    </div>
+
+    <br> 
+    <br>
+    <br>
+    <br>
+
+    <div> 
+      <h3 style="text-align: center;"><a href="javascript:history.back()"> &leftarrow;</a></h3>
+    </div>
+    <br>
+    <br>
+    <br>
+  </div>
+
+  <script>
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+
+    const toggleButton = document.querySelector('.dark-toggle');
+    toggleButton.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      const isDark = document.body.classList.contains('dark-mode');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      toggleButton.textContent = isDark ? '☀️' : '🌙';
+    }
+  </script>
+</body>
+</html>
