@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projects</title>
+  <title>Building a Full-Stack CMS with React, Node.js, and MongoDB</title>
   <link rel="stylesheet" href="styles.css" />
 
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
@@ -17,10 +17,7 @@
   <meta property="og:url" content="https://www.walidesse.info/" />
   <meta property="og:type" content="website" />
 
-</head>
-  
   <style>
-    /* Dark Mode Toggle - inline styles for the toggle */
     .dark-toggle {
       position: absolute;
       top: 20px;
@@ -50,46 +47,25 @@
       background-color: rgba(0, 115, 255, 0.2);
     }
 
-    /* Projects Heading */
-    .projects h2 {
-      font-size: 30px;
+    .blog h3 {
+      font-size: 20px;
       font-weight: lighter;
-      margin: 40px 0 20px 0;
-    }
-
-    .projects a {
+      margin: 20px 0;
+      line-height: 1.6;
       color: black;
-      text-decoration: none;
     }
 
-    .projects a:hover {
-      color: rgb(0, 115, 255);
-    }
-
-    .subtitle a {
-      color: black;
-      text-decoration: none;
-    }
-
-    .subtitle a:hover {
-      color: rgb(0, 115, 255);
-    }
-
-    body.dark-mode .projects h2,
-    body.dark-mode .subtitle h3 {
+    body.dark-mode .blog h3 {
       color: #f0f0f0;
     }
 
-    body.dark-mode .subtitle {
-      color: #ccc;
-    }
-
-    body.dark-mode .subtitle a {
-      color: #e0e0e0;
-    }
-
-    body.dark-mode .subtitle a:hover {
-      color: rgb(0, 115, 255);
+    .project-image {
+      display: block;
+      margin: 20px auto;
+      max-width: 90%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
   </style>
 </head>
@@ -117,55 +93,59 @@
       <a href="blog.html">blog</a>
     </div>
 
-    <!-- Projects Section -->
-    <div class="projects">
-      <h2>Projects</h2>
+    <!-- Blog Post Content -->
+    <div class="blog">
+
+      <h2>Building a Full-Stack CMS with React, Node.js, and MongoDB</h2>
+
+      <h3>Project Overview</h3>
+
+      <a href="https://boiledtaco.netlify.app" target="_blank">
+      <img src="images/boiledtaco.png" alt="boiledtaco" style="width: 100px; margin-left: 350px;" />
+    </a><br>
+      <p>
+        This project involved designing and building a full-stack content management system (CMS) using React.js for the frontend, Node.js with Express.js for the backend API, and MongoDB as the database. The goal was to develop a responsive web application that allowed me to create, edit, and manage a variety of content seamlessly.
+      </p>
+      <p>
+        I started by crafting the React frontend, focusing on creating reusable components and managing state efficiently to deliver a smooth user experience. The interface includes forms for submitting content, lists for displaying posts, and intuitive navigation for easy browsing.
+      </p>
+      <br>
+      <p>
+        On the backend, I designed RESTful API endpoints using Express.js that enable CRUD operations for posts and users. MongoDB, paired with Mongoose, was used to store and validate data, simplifying interactions with the database.
+        I Implemented asynchronous operations to efficiently handle API requests and improve responsiveness.
+      </p>
+      <br>
+      <p>
+        To connect the frontend and backend, I implemented asynchronous fetch requests with proper response handling to ensure real-time data updates and robust error management. Authentication and authorization were integrated to secure content management features and protect user data.
+      </p><br>
+      <p>
+        Throughout development, I gained valuable experience with full-stack JavaScript, API design, database modeling, and asynchronous programming. This project demonstrated the use of different applications by smoothly integrating multiple technologies while delivering a user-friendly interface.
+      </p>
+
+      <h3>Ongoing Work</h3>
+      <p>
+        I am still adding to this post as I am continuously adding features and refining the CMS. You can check out the current version live at <a href="https://boiledtaco.netlify.app" target="_blank" rel="noopener noreferrer">boiledtaco.netlify.app</a>.
+      </p>
+
     </div>
 
-    <div class="subtitle">
-      <h3><a href="project02.html">project 03: Power Apps Canvas App using SharePoint Lists and Power Automate</a></h3>
-      <p>Date</p>
-      <p>[professional]</p>
+    <br> 
+    <br>
+    <br>
+    <br>
+
+    <div> 
+      <h3 style="text-align: center;"><a href="javascript:history.back()"> &leftarrow;</a></h3>
     </div>
-
-   <div class="subtitle">
-      <h3><a href="project03.html">project 02: Full-stack CMS using React.js, Node.js/Express.js, and MongoDB</a></h3>
-      <p>Ongoing</p>
-      <p>[personal]</p>
-    </div> 
-
-    <div class="subtitle">
-      <h3><a href="project01.html">project 01: Integrating Jira with Microsoft SharePoint Lists using Power Automate and Nintex Workflows</a></h3>
-      <p>Thurs Jul 31</p>
-      <p>[professional]</p>
-    </div> 
-<!--
-    <div class="subtitle">
-      <h3><a href="#">project #: untitled concept</a></h3>
-      <p>future</p>
-      <p>description coming soon</p>
-    </div>
-  </div> -->
-
-<br> 
-<br>
-<br>
-<br>
-
-  <div> 
-    <h3 style="text-align: center;"><a href="javascript:history.back()"> &leftarrow;</a></h3>
-  </div>
     <br>
     <br>
     <br>
   </div>
 
   <script>
-    // Check for saved theme preference or default to light mode
     const currentTheme = localStorage.getItem('theme') || 'light';
     document.body.classList.toggle('dark-mode', currentTheme === 'dark');
 
-    // Update toggle button based on current theme
     const toggleButton = document.querySelector('.dark-toggle');
     toggleButton.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
 
