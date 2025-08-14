@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Random Psych Quotes</title>
+  <link rel="stylesheet" href="../styles.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+
+  <meta property="og:title" content="SBPD Quote Generator" />
+  <meta property="og:description" content="A random quote generator inspired by the Psych TV show." />
+  <meta property="og:image" content="https://walidesse.info/images/sbpd-generator.png" />
+  <meta property="og:url" content="https://your-domain.com/" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    .dark-toggle {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: none;
+      border: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      color: black;
+      cursor: pointer;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    .dark-toggle:hover {
+      color: rgb(0, 115, 255);
+      background-color: rgba(0, 115, 255, 0.1);
+    }
+
+    body.dark-mode .dark-toggle {
+      color: #e0e0e0;
+    }
+
+    body.dark-mode .dark-toggle:hover {
+      color: rgb(0, 115, 255);
+      background-color: rgba(0, 115, 255, 0.2);
+    }
+
+    .blog h3 {
+      font-size: 20px;
+      font-weight: lighter;
+      margin: 20px 0;
+      line-height: 1.6;
+      color: black;
+    }
+
+    body.dark-mode .blog h3 {
+      color: #f0f0f0;
+    }
+
+    .project-image {
+      display: block;
+      margin: 20px auto;
+      max-width: 90%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
+
+    <div class="name">
+      <h1><a href="../index.html">Walid Esse</a></h1>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <div class="sections">
+      <a href="../about.html">about</a>
+      <a href="../projects.html">projects</a>
+      <a href="../experience.html">experience</a>
+      <a href="../blog.html">blog</a>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="menu">
+      <a href="../about.html">about</a>
+      <a href="../projects.html">projects</a>
+      <a href="../experience.html">experience</a>
+      <a href="../blog.html">blog</a>
+    </div>
+
+    <!-- Blog Post Content -->
+    <div class="blog">
+
+      <h2>Random Quote Generator - Psych TV Show Inspired React App</h2>
+
+      <h3>Project Overview</h3>
+
+      <a href="https://randompsychquote.netlify.app" target="_blank">
+        <img src="../images/sbpd-generator.png" alt="SBPD Quote Generator" class="project-image" />
+      </a><br>
+
+      <p>
+        The SBPD Quote Generator is a web application I had the idea for while watching my favorite TV show of all time, Psych.
+        Built with React and styled to in police department case file fashion, it delivers random quotes from Shawn, Gus, Lassiter, and the rest of the Santa Barbara police department.
+      </p><br>
+
+      <p>
+        The design is essentially a retro aesthetic using Courier New typography and a file-folder appearance, complete with dashed borders and cool color schemes. 
+        Each quote is presented as an official "case file" with randomly generated case numbers, adding to the authentic SBPD experience that most fans of the show will instantly recognize.
+      </p><br>
+
+      <p>
+        The application features a curated collection of memorable quotes from all seasons, properly sourced and attributed to maintain authenticity. 
+        The interface is clean and intuitive. Just click the pineapple button to generate a new quote, complete with character attribution and episode information where available.
+      </p><br>
+
+      <p>
+        This project allowed me to explore React hooks, specifically useState for managing quote state, while practicing CSS styling techniques to create a cohesive visual theme. 
+        The responsive design ensures the experience works seamlessly across desktop and mobile devices.
+      </p><br>
+
+      <p>
+        C'mon son 🍍
+      </p>
+
+      <h3>Technical Details</h3>
+
+      <p>
+        Built using React 18 with functional components and hooks, the app leverages a JSON data structure to store quotes with metadata including character names, episode information, and source URLs. 
+        The styling uses pure CSS with custom properties and flexbox layouts for responsive design.
+      </p><br>
+
+      <p>
+        Special attention was paid to accessibility and user experience, with proper semantic HTML, hover states, and smooth transitions. 
+        The footer spans the full viewport width using viewport units and calculated margins, demonstrating advanced CSS positioning techniques.
+      </p>
+
+      <h3>Live Demo</h3>
+
+      <p>
+        Try out the quote generator at <a href="https://randompsychquote.netlify.app" target="_blank" rel="noopener noreferrer">randompsychquote.netlify.app</a> and relive your favorite Psych moments.
+      </p>
+<br>
+<p>
+        The source code is available on my <a href="https://github.com/Walid329/psych-quotes" target="_blank" rel="noopener noreferrer">GitHub</a> for anyone curious or any fans interested in contributing or creating their own!
+      </p>
+<br>
+      <p>
+        thank you Shawn and Gus for all the wonderful memories
+      </p>
+
+    </div>
+
+    <br> 
+    <br>
+    <br>
+    <br>
+
+    <div> 
+      <h3 style="text-align: center;"><a href="javascript:history.back()"> ←</a></h3>
+    </div>
+    <br>
+    <br>
+    <br>
+  </div>
+
+<div style="text-align: center; font-family: Arial, sans-serif; font-size: 16px;">
+  <a href="https://linkedin.com/in/walidesse" target="_blank" rel="noopener noreferrer">linkedin</a> |
+  <a href="https://github.com/Walid329/walidesse/" target="_blank" rel="noopener noreferrer">source code</a> |
+  <a href="../docs/Walid-Esse-Resume.pdf" target="_blank" rel="noopener noreferrer">resume</a> |
+  <a href="mailto:essewalid@icloud.com">email</a> |
+  <a href="https://github.com/Walid329" target="_blank" rel="noopener noreferrer">github</a>
+</div>
+
+  <script>
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+
+    const toggleButton = document.querySelector('.dark-toggle');
+    toggleButton.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      const isDark = document.body.classList.contains('dark-mode');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      toggleButton.textContent = isDark ? '☀️' : '🌙';
+    }
+  </script>
+</body>
+</html>
